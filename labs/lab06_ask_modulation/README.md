@@ -179,11 +179,14 @@ The output demonstrates the variation of the carrier amplitude according to the 
 flowgraph/
 
 └── ASK MODULATION.grc
+```
 
 ### Generated Python File
 
 ```text
-python/└── ask_tx_rx.py
+python/
+└── ask_tx_rx.py
+```
 
 ### Screenshots
 
@@ -194,6 +197,7 @@ screenshots/
 ├── OUTPUT-1.png
 ├── OUTPUT-2.png
 └── OUTPUT-3.png
+```
 
 ---
 
