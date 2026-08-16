@@ -12,17 +12,17 @@ To implement and analyze **Quadrature Phase Shift Keying (QPSK)** modulation and
 
 Unlike BPSK, which represents one bit per symbol using two phase states, QPSK uses **four distinct phase states**. Therefore, each QPSK symbol represents:
 
-\[
+$$
 \log_2(4)=2 \text{ bits}
-\]
+$$
 
 Thus, QPSK transmits **two bits per symbol**.
 
 The four possible phase states are commonly represented as:
 
-\[
+$$
 45^\circ,\ 135^\circ,\ 225^\circ,\ 315^\circ
-\]
+$$
 
 or equivalently by another 90°-spaced phase convention depending on the implementation.
 
@@ -32,9 +32,9 @@ or equivalently by another 90°-spaced phase convention depending on the impleme
 
 A QPSK signal can be represented as:
 
-\[
+$$
 s(t)=A\cos(2\pi f_ct+\phi_k)
-\]
+$$
 
 where:
 
@@ -66,22 +66,22 @@ QPSK can be conveniently implemented using two orthogonal components:
 
 The QPSK signal can be written as:
 
-\[
+$$
 s(t)=I(t)\cos(2\pi f_ct)-Q(t)\sin(2\pi f_ct)
-\]
+$$
 
 The I and Q carriers are separated by \(90^\circ\), making them orthogonal.
 
 The input bit stream is divided into two streams:
 
-\[
+$$
 \text{Serial Data}
 \rightarrow
 \begin{cases}
 I\text{ branch}\\
 Q\text{ branch}
 \end{cases}
-\]
+$$
 
 The two branches are independently modulated and then combined to produce the QPSK signal.
 
@@ -103,9 +103,9 @@ In a practical communication channel, the transmitted signal can be affected by 
 
 The received signal can be represented as:
 
-\[
+$$
 r(t)=s(t)+n(t)
-\]
+$$
 
 where:
 
