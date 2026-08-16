@@ -1,0 +1,15 @@
+
+# Audio files
+*.wav
+*.mp3
+
+# Video files
+*.mp4
+
+# Generated output files
+result.*
+
+# Python cache
+__pycache__/
+*.pyc
+GNU RADIO SERIES.txt
