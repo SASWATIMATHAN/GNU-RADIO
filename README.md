@@ -2,9 +2,9 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=GNU%20RADIO&fontSize=60&fontColor=ffffff&fontAlignY=40&desc=Communication%20%26%20Signal%20Processing%20Laboratory&descAlignY=62&descSize=18" width="100%"/>
+<img src="assets/gnu_radio_banner.png" alt="GNU Radio Communication and Signal Processing Laboratory" width="100%"/>
 
-<br>
+<br><br>
 
 <img src="https://img.shields.io/badge/GNU%20Radio-3.x-blue?style=for-the-badge&logo=gnuradio&logoColor=white"/>
 <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white"/>
