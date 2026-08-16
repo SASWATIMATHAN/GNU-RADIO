@@ -183,11 +183,25 @@ GNU Radio visualization blocks were used to compare the transmitted and received
 
 The implemented OFDM flowgraph is shown below.
 
+![OFDM Flowgraph 1](screenshots/FLOWGRAPH-1.png)
+
+![OFDM Flowgraph 2](screenshots/FLOWGRAPH-2.png)
+
+![OFDM Flowgraph 3](screenshots/FLOWGRAPH-3.png)
+
+![OFDM Flowgraph 4](screenshots/FLOWGRAPH-4.png)
+
+![OFDM Flowgraph 5](screenshots/FLOWGRAPH-5.png)
+
 ---
 
 ## 13. Transmitted and Received Signal Analysis
 
 The transmitted and received signals were observed using GNU Radio visualization blocks.
+
+![Received and Transmitted Signal 1](screenshots/RECEIVED%20SIGNAL_TRANSMITTED%20SIGNAL-1.png)
+
+![Received and Transmitted Signal 2](screenshots/RECEIVED%20SIGNAL_TRANSMITTED%20SIGNAL-2.png)
 
 The comparison demonstrates the behavior of the OFDM signal before and after transmission through the simulated communication system.
 
@@ -196,6 +210,10 @@ The comparison demonstrates the behavior of the OFDM signal before and after tra
 ## 14. Frequency-Domain Analysis
 
 The OFDM spectrum was observed using frequency-domain visualization.
+
+![OFDM RX TX Spectrum 1](screenshots/RX_TX_SPECTRUM-1.png)
+
+![OFDM RX TX Spectrum 2](screenshots/RX_TX_SPECTRUM-2.png)
 
 The spectrum demonstrates the presence of multiple closely spaced subcarriers that form the OFDM signal.
 
