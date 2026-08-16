@@ -328,6 +328,7 @@ The waterfall display helps visualize how the frequency components of the FM sig
 ```text
 flowgraph/
 └── FM SIMULATION.grc
+```
 
 ### Generated Python File
 
@@ -335,6 +336,7 @@ The generated Python directory is retained as part of the experiment structure.
 
 ```text
 python/
+```
 
 The GNU Radio flowgraph can generate a Python implementation when executed or exported.
 
@@ -363,6 +365,7 @@ screenshots/
 ├── WATERFALL_DISPLAY-1.png
 ├── WATERFALL_DISPLAY-2.png
 └── WATERFALL_DISPLAY-3.png
+```
 
 ---
 
