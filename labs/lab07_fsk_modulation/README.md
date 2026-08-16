@@ -63,6 +63,7 @@ For example:
 Binary data:    1    0    1    1    0
 
 Carrier:       f1   f0   f1   f1   f0
+```
 
 Therefore, the receiver determines the transmitted data by identifying which frequency is present during each symbol interval.
 
@@ -188,12 +189,14 @@ The observations demonstrate the change in carrier frequency according to the tr
 ```text
 flowgraph/
 └── FSK MODULATION.grc
+```
 
 ### Generated Python File
 
 ```text
 python/
 └── fsk_mod_demod.py
+```
 
 ### Screenshots
 
@@ -204,6 +207,7 @@ screenshots/
 ├── FLOWGRAPH-3.png
 ├── FREQUENCY DOMAIN.png
 └── TIME DOMAIN.png
+```
 
 ## 15. Result
 
