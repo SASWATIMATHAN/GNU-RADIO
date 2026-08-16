@@ -48,10 +48,10 @@ A typical mapping is:
 
 | Input Bits | Phase |
 |---|---:|
-| 00 | \(45^\circ\) |
-| 01 | \(135^\circ\) |
-| 11 | \(225^\circ\) |
-| 10 | \(315^\circ\) |
+| 00 | 45° |
+| 01 | 135° |
+| 11 | 225° |
+| 10 | 315° |
 
 The exact bit-to-phase mapping may vary depending on the implementation.
 
