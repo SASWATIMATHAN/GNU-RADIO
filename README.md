@@ -1,3 +1,21 @@
+<!-- GNU RADIO BANNER START -->
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=GNU%20RADIO&fontSize=60&fontColor=ffffff&fontAlignY=40&desc=Communication%20%26%20Signal%20Processing%20Laboratory&descAlignY=62&descSize=18" width="100%"/>
+
+<br>
+
+<img src="https://img.shields.io/badge/GNU%20Radio-3.x-blue?style=for-the-badge&logo=gnuradio&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/DSP-Signal%20Processing-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Communication%20Systems-ECE-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Labs-12%2F12%20Completed-success?style=for-the-badge"/>
+
+</div>
+
+<!-- GNU RADIO BANNER END -->
+
 # GNU Radio — Communication & Signal Processing Laboratory
 
 A structured collection of **GNU Radio Companion (GRC)** experiments covering analog modulation, digital modulation, wireless communication concepts, channel effects, signal analysis, and audio signal processing.
