@@ -30,6 +30,7 @@ Parallel Data Streams
 Multiple Orthogonal Subcarriers
       ↓
 OFDM Signal
+```
 
 Each subcarrier carries a portion of the transmitted information.
 
@@ -93,6 +94,7 @@ Parallel Data
 IFFT
     ↓
 OFDM Time-Domain Signal
+```
 
 At the receiver, the reverse operation is performed using an **FFT**:
 
@@ -108,6 +110,7 @@ Parallel Subcarriers
 Symbol Detection
         ↓
 Recovered Data
+```
 The IFFT efficiently generates the orthogonal subcarriers, while the FFT separates them at the receiver.
 
 ---
@@ -124,6 +127,7 @@ The cyclic prefix is created by copying the end portion of the OFDM symbol and p
 Original OFDM Symbol
         ↓
 [ CP ][ Original OFDM Symbol ]
+```
 If the cyclic prefix is sufficiently long compared with the channel delay spread, the effect of multipath can be significantly reduced.
 
 ---
@@ -218,11 +222,13 @@ The subcarriers overlap in the frequency domain while maintaining orthogonality.
 ```text
 flowgraph/
 └── OFDM.grc
+```
 ### Generated Python File
 
 ```text
 python/
 └── ofdm_transciever.py
+```
 
 ### Screenshots
 
@@ -237,6 +243,7 @@ screenshots/
 ├── RECEIVED SIGNAL_TRANSMITTED SIGNAL-2.png
 ├── RX_TX_SPECTRUM-1.png
 └── RX_TX_SPECTRUM-2.png
+```
 
 ## 17. Result
 
