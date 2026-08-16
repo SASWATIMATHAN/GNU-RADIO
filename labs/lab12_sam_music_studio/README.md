@@ -2,7 +2,7 @@
 
 ## 1. Aim
 
-To design and implement a basic **audio signal-processing and visualization system** using **GNU Radio Companion** and analyze an audio signal in the time and frequency domains.
+To design and implement a basic **audio signal-processing and visualization system** using **GNU Radio Companion** and analyze an audio signal in both the time and frequency domains.
 
 ---
 
@@ -49,27 +49,31 @@ An audio signal can be represented as a time-varying waveform.
 
 In the **time domain**, the signal amplitude is observed as a function of time.
 
-The time-domain representation can be expressed as:
+The time-domain signal can be represented as:
 
-```text
+$$
 x(t)
+$$
+
 where:
 
-- `x(t)` = audio signal amplitude
-- `t` = time
+- $x(t)$ = audio signal amplitude
+- $t$ = time
 
 The frequency-domain representation describes the frequency components present in the signal.
 
 A Fourier Transform can be used to convert a time-domain signal into its frequency-domain representation:
 
-```text
-X(f) = ∫ x(t)e^(-j2πft) dt
+$$
+X(f) = \int x(t)e^{-j2\pi ft}\,dt
+$$
+
 where:
 
-- `X(f)` = frequency-domain representation
-- `x(t)` = time-domain signal
-- `f` = frequency
-- `t` = time
+- $X(f)$ = frequency-domain representation
+- $x(t)$ = time-domain signal
+- $f$ = frequency
+- $t$ = time
 
 The frequency-domain representation helps identify the distribution of signal energy across different frequencies.
 
@@ -79,7 +83,7 @@ The frequency-domain representation helps identify the distribution of signal en
 
 The time-domain representation shows how the amplitude of the audio signal changes with time.
 
-A typical audio waveform can be represented as:
+A typical audio waveform can be represented conceptually as:
 
 ```text
 Amplitude
@@ -89,9 +93,13 @@ Amplitude
     |-----/----\---/----\------> Time
     |    /      \ /      \
     |
+```
+
 The amplitude visualization allows the characteristics of the audio waveform to be observed directly.
 
 Changes in the waveform correspond to changes in the audio signal with time.
+
+---
 
 ## 6. Frequency-Domain Analysis
 
@@ -99,16 +107,22 @@ The frequency-domain representation shows the frequency components contained in 
 
 The spectrum can be visualized using FFT-based processing.
 
+A conceptual spectrum can be represented as:
+
+```text
 Amplitude
     |
     |          /\
     |         /  \
     |    /\  /    \      /\
     |___/  \/      \____/  \____> Frequency
+```
 
 Different peaks in the spectrum represent frequency components with significant signal energy.
 
 Frequency-domain analysis is useful for understanding the spectral characteristics of music and other audio signals.
+
+---
 
 ## 7. Relative Gain
 
@@ -120,6 +134,8 @@ This allows the spectral distribution of the audio signal to be analyzed more ef
 
 The relative gain can vary depending on the frequency content of the audio signal.
 
+---
+
 ## 8. Waterfall Display
 
 A waterfall display provides a time-varying representation of the signal spectrum.
@@ -128,6 +144,7 @@ Unlike a conventional spectrum display, which represents the spectrum at a parti
 
 A conceptual representation is:
 
+```text
 Frequency →
 
 Time ↓
@@ -137,56 +154,101 @@ Time ↓
 ██░░░░██████████
 ████░░░░████████
 ██████░░████████
+```
 
 The waterfall visualization helps observe changes in the frequency content of the audio signal over time.
+
+---
 
 ## 9. Advantages of Audio Signal Visualization
 
 Audio visualization provides several benefits:
 
-Easy observation of signal amplitude.
-Identification of dominant frequency components.
-Analysis of spectral characteristics.
-Observation of time-varying frequency content.
-Better understanding of audio signal behavior.
-Useful for signal-processing experiments.
-Provides an intuitive connection between audio and its mathematical representation.
+- Easy observation of signal amplitude.
+- Identification of dominant frequency components.
+- Analysis of spectral characteristics.
+- Observation of time-varying frequency content.
+- Better understanding of audio signal behavior.
+- Useful for signal-processing experiments.
+- Provides an intuitive connection between audio and its mathematical representation.
+
+---
 
 ## 10. Applications
 
 Audio signal processing and visualization techniques are widely used in:
 
-Digital audio processing
-Music analysis
-Speech processing
-Audio equalization
-Noise analysis
-Communication systems
-Spectrum analysis
-Audio recording systems
-Multimedia systems
-Software-defined radio
-Digital signal-processing applications
+- Digital audio processing
+- Music analysis
+- Speech processing
+- Audio equalization
+- Noise analysis
+- Communication systems
+- Spectrum analysis
+- Audio recording systems
+- Multimedia systems
+- Software-defined radio
+- Digital signal-processing applications
+
+---
 
 ## 11. GNU Radio Implementation
 
-The SAM Music Studio was implemented using GNU Radio Companion.
+The SAM Music Studio was implemented using **GNU Radio Companion**.
 
 The system processes an audio signal and provides multiple visualization outputs.
 
 The implemented flowgraph includes signal-processing and visualization stages for observing:
 
-Audio amplitude
-Relative gain
-Frequency-domain characteristics
-Waterfall representation
-Time-varying spectral behavior
+- Audio amplitude
+- Relative gain
+- Frequency-domain characteristics
+- Waterfall representation
+- Time-varying spectral behavior
 
 GNU Radio Companion provides a practical environment for observing the audio signal simultaneously in different representations.
+
+---
 
 ## 12. GNU Radio Flowgraph
 
 The implemented SAM Music Studio flowgraph is shown below.
+
+### Flowgraph Screenshot 1
+
+![SAM Music Studio Flowgraph 1](screenshots/FLOWGRAPH-1.png)
+
+### Flowgraph Screenshot 2
+
+![SAM Music Studio Flowgraph 2](screenshots/FLOWGRAPH-2.png)
+
+### Flowgraph Screenshot 3
+
+![SAM Music Studio Flowgraph 3](screenshots/FLOWGRAPH-3.png)
+
+### Flowgraph Screenshot 4
+
+![SAM Music Studio Flowgraph 4](screenshots/FLOWGRAPH-4.png)
+
+### Flowgraph Screenshot 5
+
+![SAM Music Studio Flowgraph 5](screenshots/FLOWGRAPH-5.png)
+
+### Flowgraph Screenshot 6
+
+![SAM Music Studio Flowgraph 6](screenshots/FLOWGRAPH-6.png)
+
+### Flowgraph Screenshot 7
+
+![SAM Music Studio Flowgraph 7](screenshots/FLOWGRAPH-7.png)
+
+### Flowgraph Screenshot 8
+
+![SAM Music Studio Flowgraph 8](screenshots/FLOWGRAPH-8.png)
+
+The screenshots show the implemented GNU Radio signal-processing flowgraph and its different processing and visualization stages.
+
+---
 
 ## 13. Output Analysis
 
@@ -200,6 +262,32 @@ The waterfall displays provided a time-varying representation of the frequency s
 
 The different visualization outputs demonstrate how the same audio signal can be analyzed from multiple perspectives.
 
+### Amplitude and Relative Gain Output 1
+
+![Amplitude Relative Gain 1](screenshots/AMPLITUDE_RELATIVE%20GAIN-1.png)
+
+### Amplitude and Relative Gain Output 2
+
+![Amplitude Relative Gain 2](screenshots/AMPLITUDE_RELATIVE%20GAIN-2.png)
+
+### Amplitude and Relative Gain Output 3
+
+![Amplitude Relative Gain 3](screenshots/AMPLITUDE_RELATIVE%20GAIN-3.png)
+
+### Amplitude and Relative Gain Output 4
+
+![Amplitude Relative Gain 4](screenshots/AMPLITUDE_RELATIVE%20GAIN-4.png)
+
+### Amplitude and Relative Gain Output 5
+
+![Amplitude Relative Gain 5](screenshots/AMPLITUDE_RELATIVE%20GAIN-5.png)
+
+### Amplitude and Relative Gain Output 6
+
+![Amplitude Relative Gain 6](screenshots/AMPLITUDE_RELATIVE%20GAIN-6.png)
+
+---
+
 ## 14. Time-Domain Analysis
 
 The time-domain output was observed using GNU Radio visualization blocks.
@@ -207,6 +295,18 @@ The time-domain output was observed using GNU Radio visualization blocks.
 The amplitude changes of the audio signal were visible in the waveform representation.
 
 The time-domain display provides information about the instantaneous variation of the audio signal.
+
+### Time-Domain and Visualization Output 1
+
+![Time Amplitude Waterfall Display 1](screenshots/TIME_AMPLITUDE_WATERFALL%20DISPLAY-1.png)
+
+### Time-Domain and Visualization Output 2
+
+![Time Amplitude Waterfall Display 2](screenshots/TIME_AMPLITUDE_WATERFALL%20DISPLAY-2.png)
+
+These displays provide a practical view of the signal amplitude and its corresponding visualization characteristics.
+
+---
 
 ## 15. Frequency-Domain and Waterfall Analysis
 
@@ -218,25 +318,49 @@ The waterfall display provided an additional representation showing how the freq
 
 Together, these displays provide a comprehensive view of the audio signal.
 
+### Combined Time, Amplitude, Relative Gain and Waterfall Display
+
+![Combined Audio Visualization](screenshots/TIME_AMPLITUDE_RELATIVE%20GAIN_WATERFALL%20DISPLAY.png)
+
+The combined visualization provides a broader view of the audio signal by presenting multiple signal characteristics together.
+
+---
+
 ## 16. Observations
-The audio signal was successfully processed using GNU Radio Companion.
-The audio waveform was observed in the time domain.
-The amplitude characteristics of the signal were visualized.
-Frequency-domain characteristics of the audio signal were observed.
-Relative gain provided information about signal strength.
-The frequency distribution of the audio signal could be analyzed.
-The waterfall display showed the variation of frequency components with time.
-Different visualization blocks provided complementary information about the same audio signal.
-GNU Radio provided an effective environment for practical audio signal analysis.
+
+The following observations were made during the experiment:
+
+1. The audio signal was successfully processed using GNU Radio Companion.
+2. The audio waveform was observed in the time domain.
+3. The amplitude characteristics of the signal were visualized.
+4. Frequency-domain characteristics of the audio signal were observed.
+5. Relative gain provided information about signal strength.
+6. The frequency distribution of the audio signal could be analyzed.
+7. The waterfall display showed the variation of frequency components with time.
+8. Different visualization blocks provided complementary information about the same audio signal.
+9. GNU Radio provided an effective environment for practical audio signal analysis.
+
+---
 
 ## 17. Files Included
-GNU Radio Flowgraph
+
+### GNU Radio Flowgraph
+
+```text
 flowgraph/
 └── SAM MUSIC STUDIO.grc
-Generated Python File
+```
+
+### Generated Python File
+
+```text
 python/
 └── sam_studio.py
-Screenshots
+```
+
+### Screenshots
+
+```text
 screenshots/
 ├── AMPLITUDE_RELATIVE GAIN-1.png
 ├── AMPLITUDE_RELATIVE GAIN-2.png
@@ -255,16 +379,21 @@ screenshots/
 ├── TIME_AMPLITUDE_RELATIVE GAIN_WATERFALL DISPLAY.png
 ├── TIME_AMPLITUDE_WATERFALL DISPLAY-1.png
 └── TIME_AMPLITUDE_WATERFALL DISPLAY-2.png
+```
+
+---
 
 ## 18. Result
 
-SAM Music Studio was successfully implemented using GNU Radio Companion.
+**SAM Music Studio was successfully implemented using GNU Radio Companion.**
 
 The audio signal was successfully processed and visualized using multiple signal-analysis displays.
 
 The experiment demonstrated the time-domain amplitude characteristics, relative gain, frequency-domain behavior, and time-varying spectral characteristics of the audio signal.
 
 The waterfall visualization provided an effective representation of how the frequency content of the audio signal changes with time.
+
+---
 
 ## 19. Conclusion
 
@@ -278,5 +407,7 @@ The waterfall display provided a time-varying representation of the frequency sp
 
 GNU Radio provided a practical environment for connecting the theoretical concepts of digital signal processing with an interactive audio-processing implementation.
 
-Experiment: Lab 12 — SAM Music Studio
-Platform: GNU Radio Companion
+---
+
+**Experiment:** Lab 12 — SAM Music Studio
+**Platform:** GNU Radio Companion
