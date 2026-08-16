@@ -46,14 +46,14 @@ The subcarriers are selected such that the integral of the product of two differ
 
 For subcarriers separated by integer multiples of the subcarrier spacing:
 
-\[
+$$
 \Delta f = \frac{1}{T}
-\]
+$$
 
 where:
 
-- \(\Delta f\) = subcarrier spacing
-- \(T\) = OFDM symbol duration
+- $\Delta f$ = subcarrier spacing
+- $T$ = OFDM symbol duration
 
 This spacing allows the spectra of neighboring subcarriers to overlap while still allowing the receiver to separate them.
 
@@ -63,16 +63,16 @@ This spacing allows the spectra of neighboring subcarriers to overlap while stil
 
 An OFDM signal can be represented as:
 
-\[
+$$
 s(t)=\sum_{k=0}^{N-1}X_k e^{j2\pi k\Delta f t}
-\]
+$$
 
 where:
 
-- \(N\) = number of subcarriers
-- \(X_k\) = data symbol transmitted on the \(k\)-th subcarrier
-- \(\Delta f\) = subcarrier spacing
-- \(t\) = time
+- $N$ = number of subcarriers
+- $X_k$ = data symbol transmitted on the $k$-th subcarrier
+- $\Delta f$ = subcarrier spacing
+- $t$ = time
 
 The multiple subcarriers are combined to form the complete OFDM waveform.
 
