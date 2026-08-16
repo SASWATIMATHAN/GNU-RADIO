@@ -45,35 +45,39 @@ Transmitter ---                ---> Receiver
                \               /
                 \-------------/
                   Direct Path
+```
+
 The received signal is therefore the combination of several delayed and attenuated versions of the transmitted signal.
+
+---
 
 ## 4. Mathematical Model of Multipath Channel
 
 A multipath channel can be represented as:
 
-\[
+$$
 h(t)=\sum_{k=0}^{N-1}\alpha_k\delta(t-\tau_k)
-\]
+$$
 
 where:
 
-- \(N\) = number of propagation paths
-- \(\alpha_k\) = amplitude coefficient of the \(k\)-th path
-- \(\tau_k\) = delay associated with the \(k\)-th path
-- \(\delta(t)\) = Dirac delta function
+- $N$ = number of propagation paths
+- $\alpha_k$ = amplitude coefficient of the $k$-th path
+- $\tau_k$ = delay associated with the $k$-th path
+- $\delta(t)$ = Dirac delta function
 
 The received signal can be expressed as:
 
-\[
+$$
 y(t)=x(t)*h(t)
-\]
+$$
 
 where:
 
-- \(x(t)\) = transmitted signal
-- \(h(t)\) = channel impulse response
-- \(y(t)\) = received signal
-- \(*\) = convolution operation
+- $x(t)$ = transmitted signal
+- $h(t)$ = channel impulse response
+- $y(t)$ = received signal
+- $*$ = convolution operation
 
 Therefore, the received signal is a combination of delayed and attenuated copies of the transmitted signal.
 
@@ -97,6 +101,7 @@ Signal 1 + Signal 2
 Constructive Interference
         ↓
 Higher Received Amplitude
+```
 
 ### Destructive Interference
 
@@ -110,7 +115,11 @@ Signal 1 + Signal 2
 Destructive Interference
         ↓
 Lower Received Amplitude
+```
+
 This variation in signal strength is one of the fundamental causes of wireless fading.
+
+---
 
 ## 6. Delay Spread
 
@@ -225,6 +234,18 @@ The experiment allows the effect of multipath propagation to be observed directl
 
 The implemented multipath fading flowgraph is shown below.
 
+### Flowgraph Screenshot 1
+
+![Multipath Fading Flowgraph 1](screenshots/FLOWGRAPH-1.png)
+
+### Flowgraph Screenshot 2
+
+![Multipath Fading Flowgraph 2](screenshots/FLOWGRAPH-2.png)
+
+### Flowgraph Screenshot 3
+
+![Multipath Fading Flowgraph 3](screenshots/FLOWGRAPH-3.png)
+
 ---
 
 ## 13. Output Analysis
@@ -242,6 +263,30 @@ Depending on the relative phase and delay of the different paths, the received s
 - Signal distortion
 
 The GNU Radio time-domain and frequency-domain displays provide a visual representation of these effects.
+
+### Output Screenshot 1
+
+![Multipath Fading Output 1](screenshots/OUTPUT-1.png)
+
+### Output Screenshot 2
+
+![Multipath Fading Output 2](screenshots/OUTPUT-2.png)
+
+### Output Screenshot 3
+
+![Multipath Fading Output 3](screenshots/OUTPUT-3.png)
+
+### Output Screenshot 4
+
+![Multipath Fading Output 4](screenshots/OUTPUT-4.png)
+
+### Output Screenshot 5
+
+![Multipath Fading Output 5](screenshots/OUTPUT-5.png)
+
+### Output Screenshot 6
+
+![Multipath Fading Output 6](screenshots/OUTPUT-6.png)
 
 ---
 
@@ -266,17 +311,32 @@ The GNU Radio time-domain and frequency-domain displays provide a visual represe
 ```text
 flowgraph/
 └── MULTIPATH FADING.grc
+```
+
 ### Generated Python File
 
 ```text
 python/
 └── multipath_fading.py
+```
 
 ### Screenshots
 
 ```text
 screenshots/
-└── FLOWGRAPH.png
+├── FLOWGRAPH-1.png
+├── FLOWGRAPH-2.png
+├── FLOWGRAPH-3.png
+├── OUTPUT-1.png
+├── OUTPUT-2.png
+├── OUTPUT-3.png
+├── OUTPUT-4.png
+├── OUTPUT-5.png
+└── OUTPUT-6.png
+```
+
+---
+
 ## 16. Result
 
 **Multipath fading was successfully implemented and analyzed using GNU Radio Companion.**
