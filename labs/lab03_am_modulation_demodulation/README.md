@@ -171,11 +171,14 @@ AM modulation and demodulation concepts are fundamental to:
 ```text
 flowgraph/
 └── AM MODULATION_DEMODULATION.grc
+```
+
 ### Generated Python File
 
 ```text
 python/
 └── am_simulation.py
+```
 
 ### Screenshots
 
@@ -186,6 +189,7 @@ screenshots/
 ├── OUTPUT-2.png
 ├── OUTPUT-3.png
 └── OUTPUT-4.png
+```
 
 ## 10. Result
 
