@@ -64,9 +64,9 @@ In **Amplitude Modulation**, the **amplitude of the carrier is varied according 
 
 The general AM signal is:
 
-\[
+$$
 s(t)=A_c[1+\mu m_n(t)]\cos(2\pi f_c t)
-\]
+$$
 
 where:
 
@@ -77,15 +77,15 @@ where:
 
 For a single-tone message,
 
-\[
+$$
 m(t)=A_m\cos(2\pi f_m t)
-\]
+$$
 
 the AM signal can be written as:
 
-\[
+$$
 s(t)=A_c[1+\mu\cos(2\pi f_m t)]\cos(2\pi f_c t)
-\]
+$$
 
 where:
 
@@ -101,16 +101,16 @@ The **modulation index** indicates the depth of modulation.
 
 For a single-tone AM signal:
 
-\[
+$$
 \mu=\frac{A_m}{A_c}
-\]
+$$
 
 It can also be obtained from the envelope of the AM waveform:
 
-\[
+$$
 \mu=\frac{A_{max}-A_{min}}
 {A_{max}+A_{min}}
-\]
+$$
 
 where:
 
@@ -123,9 +123,9 @@ where:
 
 ### Under-Modulation
 
-\[
+$$
 0<\mu<1
-\]
+$$
 
 The envelope does not cross zero.
 
@@ -133,9 +133,9 @@ This is the desirable operating region for conventional AM.
 
 ### 100% Modulation
 
-\[
+$$
 \mu=1
-\]
+$$
 
 The envelope just reaches zero.
 
@@ -143,9 +143,9 @@ This represents the maximum modulation depth without envelope distortion.
 
 ### Over-Modulation
 
-\[
+$$
 \mu>1
-\]
+$$
 
 The envelope crosses zero.
 
@@ -163,33 +163,33 @@ For a single-tone message signal, the AM waveform contains three important frequ
 
 The carrier frequency is:
 
-\[
+$$
 f_c
-\]
+$$
 
 The upper sideband is:
 
-\[
+$$
 f_{USB}=f_c+f_m
-\]
+$$
 
 The lower sideband is:
 
-\[
+$$
 f_{LSB}=f_c-f_m
-\]
+$$
 
 Therefore, the AM spectrum contains components at:
 
-\[
+$$
 f_c-f_m,\quad f_c,\quad f_c+f_m
-\]
+$$
 
 The total bandwidth required for conventional AM is:
 
-\[
+$$
 BW=2f_m
-\]
+$$
 
 where \(f_m\) is the highest frequency present in the message signal.
 
@@ -199,33 +199,33 @@ where \(f_m\) is the highest frequency present in the message signal.
 
 Starting with:
 
-\[
+$$
 s(t)=A_c[1+\mu\cos(2\pi f_m t)]\cos(2\pi f_c t)
-\]
+$$
 
 Expanding:
 
-\[
+$$
 s(t)=A_c\cos(2\pi f_c t)
 +\mu A_c\cos(2\pi f_m t)\cos(2\pi f_c t)
-\]
+$$
 
 Using:
 
-\[
+$$
 \cos A\cos B=
 \frac{1}{2}[\cos(A+B)+\cos(A-B)]
-\]
+$$
 
 we obtain:
 
-\[
+$$
 s(t)=A_c\cos(2\pi f_c t)
 +\frac{\mu A_c}{2}
 \cos[2\pi(f_c+f_m)t]
 +\frac{\mu A_c}{2}
 \cos[2\pi(f_c-f_m)t]
-\]
+$$
 
 Hence:
 
@@ -241,40 +241,40 @@ This is why three frequency components are visible in the spectrum of a single-t
 
 For a single-tone AM signal, carrier power is:
 
-\[
+$$
 P_c=\frac{A_c^2}{2R}
-\]
+$$
 
 The power in each sideband is:
 
-\[
+$$
 P_{USB}=P_{LSB}
 =\frac{\mu^2}{4}P_c
-\]
+$$
 
 Total sideband power is:
 
-\[
+$$
 P_{SB}=\frac{\mu^2}{2}P_c
-\]
+$$
 
 Therefore, total transmitted power is:
 
-\[
+$$
 P_T=P_c\left(1+\frac{\mu^2}{2}\right)
-\]
+$$
 
 At 100% modulation:
 
-\[
+$$
 \mu=1
-\]
+$$
 
 so:
 
-\[
+$$
 P_T=1.5P_c
-\]
+$$
 
 Thus, a large portion of AM transmitter power is carried by the carrier, which itself does not contain information.
 
@@ -286,23 +286,23 @@ This is one of the major disadvantages of conventional AM.
 
 If the highest frequency in the message signal is \(f_m\), then:
 
-\[
+$$
 BW_{AM}=2f_m
-\]
+$$
 
 For a single-tone message:
 
-\[
+$$
 BW=f_{USB}-f_{LSB}
-\]
+$$
 
-\[
+$$
 BW=(f_c+f_m)-(f_c-f_m)
-\]
+$$
 
-\[
+$$
 \boxed{BW=2f_m}
-\]
+$$
 
 Therefore, the bandwidth of conventional AM is twice the highest message frequency.
 
@@ -328,6 +328,8 @@ AM Signal
       ├──────────► Time-Domain Observation
       │
       └──────────► Frequency-Domain Observation
+```
+
 The message signal represents the information to be transmitted, while the carrier provides the high-frequency carrier required for modulation.
 
 The modulated waveform is analyzed using time-domain and frequency-domain displays.
@@ -576,6 +578,7 @@ Amplitude Modulation has historically been and continues to be used in applicati
 ```text
 flowgraph/
 └── AM MODULATION.grc
+```
 
 ### Generated Python Files
 
@@ -585,6 +588,7 @@ GNU Radio can generate Python implementations from a GRC flowgraph.
 python/
 ├── AM MODULATION.py
 └── am_modulation.py
+```
 
 The `.grc` file represents the GNU Radio Companion flowgraph, while the Python files represent the generated GNU Radio implementations.
 
@@ -600,6 +604,7 @@ screenshots/
 ├── FREQUENCY_DOMAIN.png
 ├── TIME-DOMAIN.png
 └── TIME-DOMAIN_2.png
+```
 
 These screenshots document the implemented flowgraph and the resulting time-domain and frequency-domain behavior.
 
