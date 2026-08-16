@@ -180,12 +180,14 @@ AM demodulation techniques are used in:
 ```text
 flowgraph/
 └── AM DEMODULATION.grc
+```
 
 ### Generated Python File
 
 ```text
 python/
 └── am_demodulation.py
+```
 
 ### Screenshots
 
@@ -195,6 +197,8 @@ screenshots/
 ├── TIME-DOMAIN-1.png
 ├── TIME-DOMAIN-2.png
 └── TIME-DOMAIN-3.png
+```
+
 ## 13. Result
 
 **AM Demodulation was successfully implemented using GNU Radio Companion.**
