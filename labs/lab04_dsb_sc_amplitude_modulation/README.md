@@ -55,6 +55,7 @@ Message Signal
       ▼
     DSB-SC
      Signal
+```
 
 The multiplication operation shifts the spectrum of the message signal to frequencies around the carrier frequency.
 
@@ -224,12 +225,14 @@ The observations demonstrate the generated DSB-SC waveform and its corresponding
 ```text
 flowgraph/
 └── DSB-SC AMPLITUDE MODULATION.grc
+```
 
 ### Generated Python File
 
 ```text
 python/
 └── dsb-sc_am.py
+```
 
 ### Screenshots
 
@@ -242,6 +245,7 @@ screenshots/
 ├── OUTPUT-4.png
 ├── OUTPUT-5.png
 └── OUTPUT-6.png
+```
 
 ## 14. Result
 
