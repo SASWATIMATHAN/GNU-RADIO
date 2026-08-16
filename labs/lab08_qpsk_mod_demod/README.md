@@ -234,11 +234,14 @@ These observations demonstrate the QPSK signal characteristics and the behavior 
 ```text
 flowgraph/
 └── QPSK MOD-DEMOD.grc
+```
+
 ### Generated Python File
 
 ```text
 python/
 └── qpsk_awgn.py
+```
 
 ### Screenshots
 
@@ -260,6 +263,7 @@ screenshots/
 ├── FLOWGRAPH-4.png
 ├── FLOWGRAPH-5.png
 └── FLOWGRAPH-6.png
+```
 
 ## 15. Result
 
