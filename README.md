@@ -452,7 +452,7 @@ Future experiments may extend this repository toward more advanced topics such a
 
 ## Author
 
-**Saswati Mathan**
+**Saswati Anupama Mathan**
 
 M.Tech — Electronics & Communication Engineering
 Specialization: Communication
